@@ -3,7 +3,7 @@ import axios from "axios";
 
 const TripContext = createContext();
 
-const API_URL = import.meta.env.VITE_API_BASE_URL || "http://localhost:3000";
+const API_URL = import.meta.env.VITE_API_BASE_URL || "https://ai-app-backend-beta.vercel.app";
 
 const api = axios.create({
   baseURL: API_URL,
