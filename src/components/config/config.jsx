@@ -1,0 +1,1 @@
+export const BASE_URL = "https://ai-app-backend-beta.vercel.app"

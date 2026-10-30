@@ -2,7 +2,8 @@ import React from "react";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import TripPlannerForm from "../TripPlannerForm/TripPlannerForm";
-import TripComponent from "../TripComponent";
+import TripComponent from "../Content/TripComponent";
+import { BASE_URL } from "../config/config";
 
 const Planmytrip = () => {
   const [trip, setTrip] = useState(null);
@@ -17,7 +18,7 @@ const Planmytrip = () => {
       setError("");
 
       const response = await axios.get(
-        "https://ai-app-backend-beta.vercel.app/api/travel-plan",
+        `${BASE_URL}/api/travel-plan`,
         {
           params: {
             destination,
@@ -39,7 +40,7 @@ const Planmytrip = () => {
 
   return (
     <div className="content">
-      <div className=" mx-5 my-3">
+      <div className=" mx-2 mx-md-3 mx-lg-5 my-3">
         <TripPlannerForm onGenerate={fetchTrip} />
 
         {loading ? (

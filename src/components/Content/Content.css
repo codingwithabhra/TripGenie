@@ -8,7 +8,7 @@
 }
 
 .destination h1 {
-    color: #66CDAA;
+    color: var(--primary-color);
     font-weight: 600;
     font-size: 3rem;
     margin-bottom: 0;
@@ -37,7 +37,7 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 20px;
-    background-color: #40997b;
+    background-color: var(--primary-color);
 }
 
 .timetovisit h4,
@@ -92,12 +92,12 @@
 }
 
 .must-visit-card:hover {
-    border-color: #66CDAA;
+    border-color: var(--primary-color);
     transform: translateY(-4px);
 }
 
 .must-visit-card .icon {
-    color: #66CDAA;
+    color: var(--primary-color);
     font-size: 1.6rem;
     flex-shrink: 0;
 }
@@ -113,15 +113,15 @@
     display: flex;
 
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
 
     height: 100%;
     min-height: 50px;
 
-    padding: 10px 30px;
+    padding: 23px 30px;
     border-radius: 5px;
 
-    background: rgb(52, 145, 114);
+    background: var(--background-color);
     color: #fff;
 }
 
@@ -142,12 +142,12 @@
     padding: 10px 30px;
     border-radius: 5px;
 
-    background: rgb(52, 145, 114);
+    background: var(--background-color);
     color: #fff;
 }
 
 .localTips h6 {
-    background-color: #2e8266;
+    background-color: var(--tertiary-second-color);
     color: white;
     padding: 10px 15px;
     border-radius: 20px;
@@ -159,16 +159,12 @@
 
 @media (min-width: 768px) and (max-width: 991px) {
 
-    .content-margin {
-        margin: 0 40px;
-    }
-
     .destination h1 {
-        font-size: 2.7rem;
+        font-size: 2.2rem;
     }
 
     .destination p {
-        font-size: 2.7rem;
+        font-size: 2.2rem;
     }
 
     .duration p {
@@ -176,13 +172,9 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 641px) and (max-width: 767px) {
     .timetovisit-duration {
         flex-direction: column;
-    }
-
-    .content-margin {
-        margin: 0 40px;
     }
 
     .destination h1 {
@@ -198,9 +190,9 @@
     }
 }
 
-@media (max-width: 640px) {
+@media (min-width: 577px) and (max-width: 640px) {
 
-     .destination h1 {
+    .destination h1 {
         font-size: 2.1rem;
     }
 
@@ -208,24 +200,32 @@
         font-size: 2.1rem;
     }
 
+    .timetovisit-duration {
+        flex-direction: column;
+    }
+
     .duration p {
         font-size: 20px;
     }
 }
 
-@media (max-width: 576px) {
+@media (min-width: 516px) and (max-width: 576px) {
 
     .content-margin {
         margin: 0 15px;
     }
 
-    .destination{
+    .timetovisit-duration {
+        flex-direction: column;
+    }
+
+    .destination {
         display: flex;
-        justify-content: center!important;
+        justify-content: center !important;
         align-items: center;
     }
 
-     .destination h1 {
+    .destination h1 {
         font-size: 1.8rem;
     }
 
@@ -242,19 +242,27 @@
         flex-direction: column;
     }
 
-    .localtip-card p{
+    .localtip-card p {
         text-align: center;
     }
 }
 
-@media (max-width: 515px) {
+@media (max-width: 515.98px) {
 
-    .destination{
+    .destination {
         display: flex;
-        flex-direction: column!important;
+        flex-direction: column !important;
+    }
+
+    .destination h1 {
+        font-size: 2rem;
     }
 
     .destination p {
-        font-size: 2.3rem;
+        font-size: 1.8rem;
+    }
+
+    .timetovisit-duration {
+        flex-direction: column;
     }
 }

@@ -8,6 +8,7 @@ import { GoChecklist } from "react-icons/go";
 import { LiaMoneyBillWaveSolid } from "react-icons/lia";
 import { FaEuroSign } from "react-icons/fa";
 import { MdOutlineTipsAndUpdates } from "react-icons/md";
+import "./Content.css";
 
 const TripComponent = ({ trip }) => {
   return (
@@ -17,7 +18,7 @@ const TripComponent = ({ trip }) => {
         <div className="destination d-flex align-items-center py-2">
           <h1 className="d-flex justify-content-center align-items-center">
             {" "}
-            <span className="me-2" style={{ color: "#66CDAA" }}>
+            <span className="me-2" style={{ color: "#43ac3c" }}>
               <SlLocationPin />
             </span>{" "}
             Destination :{" "}

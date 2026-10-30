@@ -1,3 +1,11 @@
 body{
   background-color: #000!important;
 }
+
+:root {
+  --primary-color: #43ac3c;
+  --secondary-color: #0c7f31;
+  --tertiary-color: #259829;
+  --tertiary-second-color: #1c8e2e;
+  --background-color: rgb(71, 179, 49);
+}

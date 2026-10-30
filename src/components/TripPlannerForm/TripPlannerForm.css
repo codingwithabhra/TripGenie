@@ -19,7 +19,7 @@
 }
 
 .tripPlannerForm button {
-    background-color: #40997b !important;
+    background-color: var(--background-color) !important;
 }
 
 .tripPlannerForm .form-select {
@@ -27,7 +27,7 @@
     -webkit-appearance: none;
     -moz-appearance: none;
 
-    background: rgba(255, 255, 255, 0.08) url("/down.png") no-repeat right 12px center;
+    background: rgba(255, 255, 255, 0.08);
     background-size: 14px;
 
 
@@ -43,7 +43,7 @@
 }
 
 .tripPlannerForm .form-select:focus {
-    border-color: #66CDAA;
+    border-color: var(--primary-color);
     box-shadow: 0 0 0 0.2rem rgba(102, 205, 170, 0.25);
     background: rgba(255, 255, 255, 0.08);
     color: #fff;
@@ -59,7 +59,7 @@
 }
 
 .tripPlannerForm .form-select:hover {
-    border-color: #66CDAA;
+    border-color: var(--primary-color);
 }
 
 .tripPlannerForm .form-select:invalid {
@@ -82,11 +82,16 @@
 }
 
 @media (max-width: 460px) {
-    .tripPlannerForm h1 {
-        font-size: 1.7rem;
+
+    .tripPlannerForm {
+        padding: 25px 20px;
     }
 
-    .tripPlannerForm h1 span{
-        margin-right: 8px!important;
+    .tripPlannerForm h1 {
+        font-size: 1.6rem;
+    }
+
+    .tripPlannerForm h1 span {
+        margin-right: 5px !important;
     }
 }

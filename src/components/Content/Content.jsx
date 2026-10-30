@@ -2,7 +2,8 @@ import React from "react";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import "./Content.css";
-import TripComponent from "../TripComponent";
+import TripComponent from "./TripComponent";
+import { BASE_URL } from "../config/config";
 
 const Content = () => {
   const [trip, setTrip] = useState(null);
@@ -16,7 +17,7 @@ const Content = () => {
   const fetchTrip = async () => {
     try {
       const response = await axios.get(
-        "https://ai-app-backend-beta.vercel.app/api/travel-plan",
+        `${BASE_URL}/api/travel-plan`,
       );
       setTrip(response.data.data);
       console.log("Trip data--", response.data.data);
@@ -37,7 +38,7 @@ const Content = () => {
 
   return (
     <div className="content container-fluid">
-      <div className="content-margin">
+      <div className="mx-3 mx-xl-5">
         <TripComponent trip={trip} />
       </div>
     </div>
