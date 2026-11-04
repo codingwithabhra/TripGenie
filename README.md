@@ -19,7 +19,7 @@ TripGenie is a MERN stack-based travel planning application that uses AI to help
 
 ## Quick Start
 ```
-git clone https://github.com/codingwithabhra/LeadFlow.git
+git clone https://github.com/codingwithabhra/TripGenie.git
 cd <your-repo>
 npm install
 npm run dev # or `npm start` / `yarn dev`
