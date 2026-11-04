@@ -1,16 +1,104 @@
-# React + Vite
+# TripGenie (Ai-powered travel planner)
+TripGenie is a MERN stack-based travel planning application that uses AI to help users create personalized travel itineraries based on their preferences, budget, and destination. It simplifies trip planning by providing smart recommendations, organizing travel details, and delivering a seamless travel planning experience.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+## Demo Link
+[Demo Link](https://travel-genie-phi.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Log In
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+> **Guest**
+> Username: 'Megha Bhattacharya',
+> Email: 'megha.bhattacharya77@gmail.com',
+> Password: 'Megha@963'
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Quick Start
+```
+git clone https://github.com/codingwithabhra/LeadFlow.git
+cd <your-repo>
+npm install
+npm run dev # or `npm start` / `yarn dev`
+```
+
+---
+
+## Technologies
+- React Js
+- React Router
+- OpenAi SDK
+- Oauth 2.0
+- Node Js
+- Express Js
+- Mongodb
+- Bootstrap
+
+---
+
+## Demo Video
+Watch a walkthrough (5-7 minutes) of all the major features of this app : [Watch Video](https://drive.google.com/drive/folders/1ewpRziGEsAGuZdV1lIDCAf_68wjzzEfh?usp=sharing)
+
+---
+
+## Features
+**Log In**
+- Displays a log-in form for user to sign-in.
+- A google sign-in button.
+- For new user, "create an account" option.
+
+**Sign Up**
+- Displays a form for user to sign up.
+- Form includes full name, email, password.
+  
+**Home**
+- Displays a example trip planning of "Tokyo, Japan".
+
+**Plan My Trip**
+- Choose your destination and duration.
+- Click on 'Generate Trip' button.
+- Ai generated travel planner will be displayed.
+
+**My Profile**
+- User personal details like email, name, sign-in method are being displayed.
+- Clicking on "Log out" button will take user out of the app.
+
+---
+
+## Api Reference
+
+### **GET /api/travel-plan**<br>
+Get the complete travel plan<br>
+Sample response:<br>
+```
+[{city, country, Best Time to Visit, Ideal Duration, Must-Visit Places, Trip Itinerary, Estimated Trip Cost, Local Tips},...]
+```
+
+### **POST /auth/signup**<br>
+To send new user info to database<br>
+Sample response:<br>
+```
+[{_id, name, email, password},...]
+```
+
+### **POST /auth/login**<br>
+To send user log in info to database<br>
+Sample response:<br>
+```
+[{_id, email, password},...]
+```
+
+### **GET /auth/profile**<br>
+To get user info from database<br>
+Sample response:<br>
+```
+[{_id, name, email, password},...]
+```
+
+---
+
+## Contacts
+For bugs or features request please reach out to patra.abhra97@gmail.com
